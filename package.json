@@ -1,0 +1,21 @@
+{
+  "name": "api-futebol-ts",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "author": "Alex Angelo",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "dev": "nodemon src/server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.10.2",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
