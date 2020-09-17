@@ -4,9 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
-var jogadoresRouter_1 = __importDefault(require("./routes/jogadoresRouter"));
-var app = express_1.default();
-app.use('/jogadores', jogadoresRouter_1.default);
-app.listen(8000, function () {
-    console.log("Servidor rodando na porta 8000");
+var router = express_1.default.Router();
+router.get('/', function (req, res) {
+    res.status(200).json({ teste: 'testando' });
 });
+exports.default = router;
