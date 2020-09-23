@@ -2,9 +2,9 @@ import {Sequelize} from 'sequelize';
 import URL from '../config/databases';
 
 class Database {
-    public connection: Sequelize;
+    public sequelize: Sequelize;
   constructor() {
-    this.connection = new Sequelize(URL);
+    this.sequelize = new Sequelize(URL);
   }
 }
 export default new Database();
